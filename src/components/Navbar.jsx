@@ -13,11 +13,11 @@ const Navbar = () => {
       </div> */}
       <div className="max-w-8xl mx-auto">
         <div className="py-4 border-b border-slate-900/10">
-          <div className="relative flex items-center ml-16">
+          <div className="relative flex items-center lg:ml-16 ml-4">
             <img className="w-10" src="/yere.png" alt="icon" />
             <div className="relative lg:flex items-center ml-auto">
-              <nav className="text-sm leading-6 font-semibold text-slate-700 mr-16">
-                <ul className="flex space-x-8">
+              <nav className="text-xs lg:text-xl leading-6 font-semibold text-slate-700 lg:mr-16 mr-4">
+                <ul className="flex lg:space-x-8 space-x-3">
                   <li>
                     <a className="hover:text-sky-500" href="#home">
                       Home

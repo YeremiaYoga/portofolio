@@ -4,8 +4,9 @@ const Home = () => {
   return (
     <div id="home" className="h-full">
       <div className="flex flex-wrap">
-        <div className="w-full self-center px-4 lg:w-1/2">
-          <h1 className="lg:text-8xl text-center lg: font-bold mt-40 px-8 text-4xl">Yeremia Yoga🗿</h1>
+        <div className="w-full self-center lg:w-1/2">
+          <h1 className="lg:text-8xl text-center font-bold mt-40 text-5xl">Yeremia Yoga🗿</h1>
+          <div>
           <TypeAnimation
             sequence={[
               "Hello Friend, I'm Web Developer 🗿.",
@@ -24,12 +25,15 @@ const Home = () => {
               marginTop: "1em",
               marginLeft: "2em",
               marginBottom: "40px",
+              
             }}
           />
+          </div>
+          
           <button className="text-base ml-14 py-3 px-8 bg-transparent hover:bg-sky-500 text-sky-500 font-semibold hover:text-white border border-sky-500 rounded">
             Download Resume
           </button>
-          <div className="flex gap-x-12 mt-40 lg:ml-14 lg:mt-80">
+          <div className="flex gap-x-12 mt-40 ml-14 lg:mt-80 ">
             <a href="https://github.com/YeremiaYoga">
               <img
                 className="w-12 hover:-translate-y-1 hover:scale-110 duration-300"

@@ -1,9 +1,9 @@
 const Contacts = () => {
   return (
-    <div id="contacts" className="h-full p-20">
+    <div id="contacts" className="h-full py-20">
       <div>
         <div className="w-full px-4">
-          <div className="max-w-xl mx-auto text-center mb-16">
+          <div className="max-w-xl mx-auto text-center">
             <h1 className="font-semibold text-lg mb-2">Contact</h1>
           </div>
         </div>
@@ -33,8 +33,8 @@ const Contacts = () => {
                 id="nama"
               ></textarea>
             </div>
-            <div className="w-full px-4">
-              <button className=" text-base w-60 bg-transparent hover:bg-sky-500 text-sky-500 font-semibold hover:text-white py-2 px-8 border border-sky-500 rounded">
+            <div className="flex px-4 justify-center">
+              <button className=" text-base lg:w-60 bg-transparent hover:bg-sky-500 text-sky-500 font-semibold hover:text-white py-2 px-8 border border-sky-500 rounded">
                 Kirim
               </button>
             </div>
