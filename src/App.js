@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Navbar from "./components/Navbar.jsx";
+import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
+import Project from "./components/Project.jsx";
+import Contacts from "./components/Contacts.jsx";
+import Footer from "./components/Footer.jsx";
+
+import { useEffect } from "react";
+import useReactPath from "./hooks/useReactPath.jsx";
 
 function App() {
+
+  let location = useReactPath();
+
+  useEffect(() => {
+    console.log(location)
+  },[location])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="animate-changeBg">
+      <Navbar />
+      <Home />
+      <About/>
+      <Skills/>
+      <Project/>
+      <Contacts/>
+      <Footer/>
     </div>
   );
 }
